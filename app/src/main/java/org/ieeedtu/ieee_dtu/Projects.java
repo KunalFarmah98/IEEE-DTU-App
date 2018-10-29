@@ -4,10 +4,24 @@ import java.util.ArrayList;
 
 public class Projects {
     private String title;
-    private ArrayList<String> tags;
+    private String[] tags;
     private String desc ;
     private int contact;
+
+
+
+    private String year;
     private String link;
+    private ArrayList<String[]> madeBy;
+
+
+    public ArrayList<String[]> getMadeBy() {
+        return madeBy;
+    }
+
+    public void setMadeBy(ArrayList<String[]> madeBy) {
+        this.madeBy = madeBy;
+    }
 
     public String getTitle() {
         return title;
@@ -17,12 +31,23 @@ public class Projects {
         this.title = title;
     }
 
-    public ArrayList<String> getTags() {
-        return tags;
+    public String getTags(int i) {
+
+        return tags[i];
     }
 
-    public void setTags(ArrayList<String> tags) {
+    public void setTags(String[] tags) {
         this.tags = tags;
+    }
+
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getYear() {
+
+        return year;
     }
 
     public String getDesc() {
